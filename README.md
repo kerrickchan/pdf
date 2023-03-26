@@ -1,3 +1,21 @@
+# PDF Generator Service
+
+## Production
+### Docker
+```bash
+./script/docker-up.sh
+```
+
+## Development
+1. install packages
+```bash
+yarn install
+```
+2. develop
+```
+yarn start:dev
+```
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
