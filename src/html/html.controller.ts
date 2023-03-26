@@ -11,10 +11,17 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { ApiBody, ApiConsumes, ApiParam, ApiResponse } from '@nestjs/swagger';
+import {
+  ApiBody,
+  ApiConsumes,
+  ApiParam,
+  ApiResponse,
+  ApiTags,
+} from '@nestjs/swagger';
 import { Request, Response } from 'express';
 import { HtmlService } from './html.service';
 
+@ApiTags('html')
 @Controller('html')
 export class HtmlController {
   @Inject()
