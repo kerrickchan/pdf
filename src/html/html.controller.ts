@@ -27,7 +27,7 @@ export class HtmlController {
   @Inject()
   private readonly htmlService: HtmlService;
 
-  @Get()
+  @Get('/list')
   listAllHtmls() {
     return this.htmlService.listAllHtmls();
   }
